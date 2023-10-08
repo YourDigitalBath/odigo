@@ -21,11 +21,12 @@ body {
     left: 0%;
     width: 100%;
 }
-.wrapper {
-    max-width: 1060px;
+.container {
+    max-width: 1090px;
     margin: 0 auto;
+    padding: 0 15px;
 }
-.header-wrapper {
+.header__wrapper {
     padding-top: 56px;
     display: flex;
     flex-wrap: wrap;
@@ -33,28 +34,28 @@ body {
     justify-content: space-between;
 }
 
-.header-nav-list {
+.header__nav-list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.header-nav-list-item {
+.header__nav-list-item {
     margin-right: 82px;
 }
-.header-nav-list-item:last-child {
+.header__nav-list-item:last-child {
     margin-right: 0px;
 }
 
-.header-nav-list-item-link {
+.header__nav-list-item-link {
     font-size: 18px;
     line-height: 24px;
     color: white;
     text-decoration: none;
 }
 
-header-nav-list-item-link:hover,
-header-nav-list-item-link:focus,
-header-nav-list-item-link:active {
+header__nav-list-item-link:hover,
+header__nav-list-item-link:focus,
+header__nav-list-item-link:active {
     opacity: 0.75;
 }
 
@@ -68,7 +69,7 @@ header-nav-list-item-link:active {
     padding-top: 263px;
 }
 
-.intro-title {
+.intro__title {
     max-width: 619px;
     font-weight: 500;
     font-size: 50px;
@@ -77,19 +78,19 @@ header-nav-list-item-link:active {
     margin-bottom: 22px;
 }
 
-.intro-subtitle {
+.intro__subtitle {
     max-width: 546px;
     color: white;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 59px;
 }
-.search-form-info {
+.search__form-info {
     display: flex;
     flex-wrap: wrap;
 }
 
-.search-form-field {
+.search__form-field {
     width: 297px;
     background: transparent url(../img/svg/circle-icon.svg) no-repeat left 6px;
     background-size: 20px;
@@ -102,32 +103,32 @@ header-nav-list-item-link:active {
     line-height: 24px;
     color: white;
 }
-.search-form-field::placeholder {
+.search__form-field::placeholder {
     font-size: 18px;
     line-height: 24px;
-    color: aquamarine;
+    color: #FFF;
 }
 
-.search-form-submit {
+.search__form-submit {
     padding: 15px 39px;
     text-transform: uppercase;
     font-size: 18px;
     line-height: 24px;
-    color: aquamarine;
+    color: #FFF;
     background: #1b7dff;
     border: 0;
 }
 
-.search-form-submit:hover,
-search-form-submit:focus,
-search-form-submit:active {
+.search__form-submit:hover,
+search__form-submit:focus,
+search__form-submit:active {
     background: #2974d7;
 }
 
 /*   INTRO STYLES END  */
 
 /*   BENEFITS STYLES START  */
-.benefits-wrap {
+.benefits__wrap {
     max-width: 1262px;
     background-color: white;
     margin: 0 auto;
@@ -135,7 +136,7 @@ search-form-submit:active {
     position: relative;
 }
 
-.benefits-title {
+.benefits__title {
     width: 100%;
     font-weight: 400;
     font-size: 35px;
@@ -152,7 +153,7 @@ search-form-submit:active {
     background-color: white;
 }
 
-.benefits-cards {
+.benefits__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 55px;
