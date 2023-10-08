@@ -181,7 +181,7 @@ header__link:active {
 /*   INTRO STYLES START   */
 .intro {
     min-height: 100vh;
-    background: url(../img/intro-bg.jpg);
+    background: url(../img/sections/intro/intro-bg.jpg);
     background-size: cover;
     padding-top: 263px;
 }
@@ -325,11 +325,9 @@ header__link:active {
     background: url(../img/svg/right-arrow.svg) no-repeat right center;
 
 } 
-
-
-
 /*   BENEFITS STYLES END  */
 
 
-/*   BENEFITS STYLES START  */
-/*   BENEFITS STYLES END  */
+/*   PLACES STYLES START  */
+
+/*   PLACES STYLES END  */
