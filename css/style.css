@@ -1,5 +1,116 @@
+/* Reset and base styles  */
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+/*----------------RESET CSS END--------------*/
+
+
 html {
-    font-family: "Lato", sans-serif;
     box-sizing: border-box;
 }
 
@@ -10,7 +121,18 @@ html {
 }
 
 body {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
     line-height: 1.2;
+    color: #102746;
+}
+
+[class*='__container'] {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1090px;
 }
 
 /*   HEADER STYLES START   */
@@ -21,11 +143,7 @@ body {
     left: 0%;
     width: 100%;
 }
-.container {
-    max-width: 1090px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+
 .header__wrapper {
     padding-top: 56px;
     display: flex;
@@ -34,28 +152,27 @@ body {
     justify-content: space-between;
 }
 
-.header__nav-list {
+.header__list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.header__nav-list-item {
+.header__item {
     margin-right: 82px;
 }
-.header__nav-list-item:last-child {
+.header__item:last-child {
     margin-right: 0px;
 }
 
-.header__nav-list-item-link {
+.header__link {
     font-size: 18px;
     line-height: 24px;
     color: white;
-    text-decoration: none;
 }
 
-header__nav-list-item-link:hover,
-header__nav-list-item-link:focus,
-header__nav-list-item-link:active {
+.header__link:hover,
+header__link:focus,
+header__link:active {
     opacity: 0.75;
 }
 
@@ -94,7 +211,6 @@ header__nav-list-item-link:active {
     width: 297px;
     background: transparent url(../img/svg/circle-icon.svg) no-repeat left 6px;
     background-size: 20px;
-    border: 0;
     border-bottom: 2px solid #bfc0c5;
     margin-right: 60px;
     padding-left: 43px;
@@ -116,20 +232,26 @@ header__nav-list-item-link:active {
     line-height: 24px;
     color: #FFF;
     background: #1b7dff;
-    border: 0;
 }
 
 .search__form-submit:hover,
-search__form-submit:focus,
-search__form-submit:active {
+.search__form-submit:focus,
+.search__form-submit:active {
     background: #2974d7;
 }
 
 /*   INTRO STYLES END  */
 
+
+
 /*   BENEFITS STYLES START  */
+
+.benefits {
+    margin-bottom: 131px;
+}
+
 .benefits__wrap {
-    max-width: 1262px;
+    max-width: 1260px;
     background-color: white;
     margin: 0 auto;
     box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
@@ -157,6 +279,57 @@ search__form-submit:active {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 55px;
+    padding: 0 100px;
 }
 
+
+.benefits__card {
+    grid-column: span 1;
+    margin-bottom: 112px;
+
+
+}
+
+.benefits__card-icon {
+    min-width: 66px;
+    margin-bottom: 37px;
+}
+
+.benefits__card-title {
+    margin-bottom: 26px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.benefits__card-subtitle {
+    margin-bottom: 39px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.benefits__card-link {
+    display: inline-block;
+    padding-right: 59px;
+    text-transform: uppercase;
+    color: #006DFE;
+    background: url(../img/svg/right-arrow.svg) no-repeat 95% center;
+    transition: .2s all;
+}
+
+.benefits__card-link::hover,
+.benefits__card-link::focus {
+    background: url(../img/svg/right-arrow.svg) no-repeat right center;
+
+} 
+
+
+
+/*   BENEFITS STYLES END  */
+
+
+/*   BENEFITS STYLES START  */
 /*   BENEFITS STYLES END  */
